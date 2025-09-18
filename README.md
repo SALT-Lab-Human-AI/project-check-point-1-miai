@@ -2,5 +2,7 @@ AI Based Mock Interview System
 
 a) Problem Statement and Why It Matters
 The core challenge this project tackles is a familiar one: going blank during a coding interview on a question you knew the answer to, only to think afterward, “I should have said this instead.” This moment of regret is common across all career stages and often stems from inadequate preparation. Without realistic practice, even capable candidates can struggle to showcase their skills effectively, leaving them anxious and underconfident.
+
 This problem matters because interview performance is a decisive factor in career growth. A strong interview can open doors to dream jobs and competitive opportunities, while a weak one can shut them. Employers aren’t just assessing technical knowledge—they’re also evaluating clarity of thought, problem-solving under pressure, and communication skills. Candidates who lack structured, practical preparation risk underselling themselves and missing out on pivotal career moves.
-This project aims to change that. By providing a platform for realistic, targeted interview practice, it helps candidates refine their responses, boost confidence, and consistently present their best selves—ultimately making them better at interviews, period
+
+This project aims to change that. By providing a platform for realistic, targeted interview practice, it helps candidates refine their responses, boost confidence, and consistently present their best selves—ultimately making them better at interviews.
