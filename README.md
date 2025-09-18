@@ -1,4 +1,4 @@
-# AI Based Mock Interview System
+# AI Based Mock Interview System - Mocksy
 
 ## 📌 Problem Statement and Why It Matters  
 
