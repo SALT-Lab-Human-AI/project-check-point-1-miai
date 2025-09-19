@@ -4,7 +4,7 @@
 </p>
 
 <!-- Project Title -->
-<h1 align="center">🚀 MockSy</h1>
+<h1 align="center">🤖 MockSy 🎯 </h1>
 
 <!-- Tagline -->
 <p align="center"><i>Your personal AI-powered mock interview companion</i></p>
