@@ -9,7 +9,6 @@
 <!-- Tagline -->
 <p align="center"><i>Your personal AI-powered mock interview companion</i></p>
 
----
 
 <!-- Badges -->
 <p align="center">
@@ -22,7 +21,7 @@
   <img src="https://img.shields.io/badge/AI-Gemini-brightgreen.svg" alt="Gemini AI"/>
 </p>
 
-
+---
 
 ## 📌 Problem Statement and Why It Matters  
 
@@ -46,7 +45,7 @@ This project aims to change that. By providing a platform for realistic, targete
 
 Ultimately, the system makes candidates **better at interviews**.  
 
----
+
 
 ## 🎯 Target Users  
 
@@ -57,7 +56,7 @@ The **AI Mock Interview System** is designed for anyone preparing for job interv
 
 Its flexibility ensures it supports candidates *“no matter where you are in your career.”*  
 
----
+
 
 ## 🛠️ Proposed Core User Tasks  
 
@@ -112,7 +111,7 @@ Users can review past performance reports to:
 - Monitor growth over time  
 - Identify recurring areas for improvement  
 
----
+
 
 ## 🚀 Vision  
 
