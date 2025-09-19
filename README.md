@@ -1,9 +1,28 @@
+<!-- Logo -->
 <p align="center">
-  <img src="path/to/logo.png" alt="Mocksy Logo" width="200"/>
+  <img src="Mocksy Logo.png" alt="Mocksy Logo" width="200"/>
+</p>
+
+<!-- Project Title -->
+<h1 align="center">🚀 MockSy</h1>
+
+<!-- Tagline -->
+<p align="center"><i>Your personal AI-powered mock interview companion</i></p>
+
+---
+
+<!-- Badges -->
+<p align="center">
+  <a href="https://opensource.org/licenses/Apache-2.0">
+    <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="License"/>
+  </a>
+  <img src="https://img.shields.io/badge/For-Students-pink.svg" alt="For Students"/>
+  <img src="https://img.shields.io/badge/Tech-Next.js-black.svg" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/Backend-Firebase-yellow.svg" alt="Firebase"/>
+  <img src="https://img.shields.io/badge/AI-Gemini-brightgreen.svg" alt="Gemini AI"/>
 </p>
 
 
-# AI Based Mock Interview System - Mocksy
 
 ## 📌 Problem Statement and Why It Matters  
 
