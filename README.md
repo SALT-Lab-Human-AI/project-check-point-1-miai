@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="path/to/logo.png" alt="Mocksy Logo" width="200"/>
+</p>
+
+
 # AI Based Mock Interview System - Mocksy
 
 ## 📌 Problem Statement and Why It Matters  
