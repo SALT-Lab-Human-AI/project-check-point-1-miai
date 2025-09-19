@@ -2,116 +2,100 @@
 
 This repository contains structured notes and insights from additional research papers closely aligned to our project: an AI Voice Agent Enabled Mock Interview Platform using Gemini for question generation and feedback.
 
----
+# 📚 Literature Reflections
 
-## 📄 Paper: *Virtual Interviewers, Real Results: Exploring AI-Driven Mock Technical Interviews on Student Readiness and Confidence* (2025)  
+## Paper 1: *Will You Trust Me More Than ChatGPT? Evaluating LLM-Generated Code Feedback for Mock Technical Interviews* (2025)
 
-**Full Citation + Link**  
-Gomez, N., Batham, S. S., Volonte, M., & Do, T. D. (2025). *Virtual Interviewers, Real Results: Exploring AI-Driven Mock Technical Interviews on Student Readiness and Confidence.* arXiv:2506.16542. https://arxiv.org/abs/2506.16542  
-*(Also listed as “to appear” in CSCW Companion ’25 on the Drexel DiVA Lab site.)*  
+**Citation + Link**  
+Vaishampayan, S., & Brown, C. (2025). *Will You Trust Me More Than ChatGPT? Evaluating LLM-Generated Code Feedback for Mock Technical Interviews.* IEEE/ACM 18th International Conference on Cooperative and Human Aspects of Software Engineering (CHASE). https://doi.org/10.1109/CHASE66643.2025.00018  
 
----
 
 ### 📑 Summary (4–6 sentences)  
-This formative study examines whether an AI interviewer can realistically simulate technical interviews and improve students’ confidence and readiness. Twenty computing students completed a 50-minute session with an AI system that supported real-time dialogue, whiteboarding, and feedback; many described the experience as realistic and helpful for articulating their problem-solving process. The prototype used modern speech + LLM components (e.g., GPT-4o for multimodal language, LiveKit for calls) and achieved ~300 ms response latency—close to human conversational timing. Reported outcomes included high perceived usefulness (80%) and willingness to reuse (65%), alongside noted issues with conversational flow/timing and a desire for more personalization options. Overall, the authors conclude AI-led mock interviews can mimic real technical interviews and boost confidence, while highlighting areas to improve interaction smoothness and customization.  
-
----
+This study investigates the usefulness and trustworthiness of LLM-generated feedback on code in mock technical interview settings. The authors built a platform powered by ChatGPT where candidates solved algorithmic problems, and feedback was delivered in two modes: human-administered (Wizard-of-Oz style) and automated. Across 46 participants, feedback was mostly accurate (~83%) and highly useful (~91%), but trust significantly dropped when users knew feedback came directly from ChatGPT. The findings highlight a paradox: while AI feedback is effective for learning, candidates still prefer a human “face” to mediate it.  
 
 ### 💡 3 Insights I Learned  
-1. **Realism matters:** Low-latency voice and interactive whiteboarding made sessions feel closer to real interviews, which students linked to better readiness.  
-2. **Confidence gains are credible:** Most participants found the tool useful and said they’d use it again—evidence that AI practice can reduce anxiety and support preparation.  
-3. **Personalization is a lever:** Students explicitly asked for adjustable tone/voice and guidance levels, suggesting configurable interviewer “personas” could improve fit.  
-
----
+1. Accuracy ≠ trust: Even when AI feedback was correct, candidates trusted it less if it was clearly automated.  
+2. Human-AI collaboration boosts acceptance — adding light human mediation improved perceived reliability.  
+3. Feedback on time/space complexity and optimization was especially valued, showing where LLMs add unique value over peers.  
 
 ### ⚠️ 2 Limitations/Risks  
-1. **Small, single-site sample (n=20):** Findings may not generalize across institutions, roles, or seniority levels.  
-2. **Conversational seams:** Users noticed hiccups in flow/responsiveness—voice agents must handle turn-taking and timing carefully to avoid breaking immersion.  
+1. Small, single-site sample (students only) limits generalization to industry professionals.  
+2. AI hallucinations and overly generalized suggestions reduced credibility, even if rare.  
+
+### 🎯 1 Concrete Idea for MockSy  
+Include a **“feedback framing layer”** — e.g., present AI feedback in structured, human-like report templates rather than raw text. This could increase trust without major infrastructure changes.  
 
 ---
 
-### 🎯 1 Concrete Idea for Our Project  
-Add lightweight interviewer **“personas”** in MockSy (e.g., *supportive*, *neutral*, *grill-style*) with a simple toggle for guidance level and voice style. This directly targets personalization gaps noted by students and can be implemented with Gemini for content and Vapi for voice, without requiring complex infrastructure.  
+## Paper 2: *AI-Driven Real-Time Interview Simulation App with Voice Recognition and Facial Analysis* (2025)
 
+**Citation + Link**  
+Jagtap, S. R., Kulkarni, V., Pachorkar, Y., Taur, O., Gupta, S., & Pujeri, U. (2025). *AI-Driven Real-Time Interview Simulation App with Voice Recognition and Facial Analysis.* *Indian Journal of Science and Technology, 18*(25), 2058–2066. https://doi.org/10.17485/IJST/v18i25.760  
+
+
+### 📑 Summary (4–6 sentences)  
+This paper introduces an Android application that combines real-time **facial expression tracking, voice analysis, and ChatGPT-driven question generation** to simulate realistic interviews. The app leverages Google ML Kit for facial analysis, Google Teachable Machine for custom voice models, and ChatGPT API for dynamic dialogue. Testing showed ~70% of users reported improved confidence, eye contact, and communication after repeated sessions. Compared to earlier tools, this platform uniquely integrates multimodal feedback (verbal + nonverbal), making simulations more immersive and holistic.  
+
+### 💡 3 Insights I Learned  
+1. Multimodal feedback (voice + face) enhances realism and captures non-verbal skills often missed in AI prep tools.  
+2. Mobile-first design improves accessibility, letting candidates practice anywhere.  
+3. Real-time adaptive feedback (based on past performance) is a differentiator from static Q&A apps.  
+
+### ⚠️ 2 Limitations/Risks  
+1. Current version lacks multilingual support and cultural adaptation, limiting broader usability.  
+2. No VR/AR integration, which could further boost immersion.  
+
+### 🎯 1 Concrete Idea for MockSy  
+While MockSy focuses on **voice + LLM feedback**, a **future extension** could include lightweight non-verbal tracking (e.g., speech pacing or pause detection) to approximate behavioral feedback without requiring full facial analysis.  
+
+---
+## Paper: *AI-Enhanced HR Interview Simulation for Realistic Candidate Assessment* (2025)
+
+**Citation + Link**  
+Sarumathi, S., Gowthaman, R. L., Sultana, A., & Sabareesh, M. B. (2025). *AI-Enhanced HR Interview Simulation for Realistic Candidate Assessment.* Proceedings of the 3rd International Conference on Intelligent Data Communication Technologies and Internet of Things (IDCIoT-2025). IEEE. https://doi.org/10.1109/IDCIOt64235.2025.10915193  
+
+
+### 📑 Summary (4–6 sentences)  
+This paper proposes an AI-driven HR interview simulation system that generates **personalized questions from a candidate’s resume and job description**, simulating realistic recruiter-style interviews. It integrates **Gemini-based LLMs** for adaptive questioning, facial expression analysis via CNNs, and **voice sentiment analysis** via RNNs to evaluate both cognitive and emotional performance. Reinforcement learning dynamically adjusts difficulty, digging deeper into strengths or weaknesses. The system also evaluates **ATS compliance** in resumes, provides real-time feedback, and outputs structured interview reports. Reported benefits include scalability (handling many candidates simultaneously), fairness through reduced bias, and holistic assessment combining both technical and affective traits.  
+
+
+### 💡 3 Insights I Learned  
+1. Resume + job description parsing enables highly personalized, context-specific interview questions.  
+2. Emotion and behavior tracking (facial + vocal cues) add depth to assessment beyond technical correctness.  
+3. Scalability is a major advantage — the system can screen large candidate pools consistently without fatigue or bias.  
+
+
+### ⚠️ 2 Limitations/Risks  
+1. Heavy reliance on facial and vocal analysis could introduce cultural bias or misinterpretation of behaviors.  
+2. Complexity and cost of multimodal AI systems may hinder adoption for smaller organizations.  
+
+
+### 🎯 1 Concrete Idea for MockSy  
+Instead of full facial analysis, **lightweight ATS-style resume parsing** could be integrated into MockSy to **generate more tailored questions** from user-uploaded resumes. This keeps scope manageable while adding personalization, directly inspired by this paper’s resume-driven approach.  
 
 ---
 
-## 📄 Paper 2: *Automatic Skill-Oriented Question Generation and Interview Question Recommendation*  
-**Citation:** Qin, C., Zhu, H., Shen, D., Sun, Y., Yao, K., Wang, P., & Xiong, H. (2024). *Automatic Skill-Oriented Question Generation and Interview Question Recommendation.* ACM Transactions on Information Systems, 42(1). https://doi.org/10.1145/3604552  
+## Paper: *Talent Tracer – AI Driven Interview Preparation Engine for Job Seekers using LLMs* (2025)
 
-### Summary (4–6 sentences)  
-This paper introduces DuerQues, a system that mines skill entities from large datasets, generates interview questions with neural models, and recommends them using graph-based methods. It leverages external sources like community Q&A and click logs to ensure relevance. Experiments showed strong results in creating targeted, skill-specific interview questions at scale. This demonstrates how AI can generate both breadth and depth of content for interviews.  
+**Citation + Link**  
+Akshaya, V., Vejaysundaram, R., & Santhosh, H. (2025). *Talent Tracer – AI Driven Interview Preparation Engine for Job Seekers using LLMs.* Proceedings of the 11th International Conference on Communication and Signal Processing (ICCSP 2025). IEEE. https://doi.org/10.1109/ICCSP64183.2025.11088608  
 
-### 3 Insights I Learned  
-1. Skill-specific question generation makes practice far more relevant than generic sets.  
-2. Mining job-related skills from external text keeps questions updated.  
-3. Recommendations can ensure appropriate difficulty and focus per user.  
 
-### 2 Limitations/Risks  
-1. Relies on large proprietary datasets, which may not be available in small projects.  
-2. Automatically generated questions can still contain bias or irrelevant phrasing.  
+### 📑 Summary (4–6 sentences)  
+This paper presents *Talent Tracer*, an AI-based interview preparation platform designed to improve candidates’ **technical, behavioral, and soft skills**. The system parses resumes and job descriptions to identify skills and gaps, then generates customized interview questions using transformer-based models (GPT, T5, BART). Candidates can respond in **text, audio, or video**, with each input type analyzed by specialized AI models: DeepSeek NLP for text, Whisper ASR for speech, and CNN classifiers for real-time video evaluation (facial expressions, posture, gestures). Feedback is compiled into a comprehensive report with strengths, weaknesses, and targeted recommendations. Compared to existing systems, Talent Tracer offers **multimodal evaluation and explainable AI**, producing up to 15% performance improvement in accuracy, precision, and recall.  
 
-### 1 Concrete Idea for Our Project  
-Use **Gemini prompts** to generate questions directly from user inputs (role, stack, level) and apply lightweight filters to ensure technical relevance.  
 
----
+### 💡 3 Insights I Learned  
+1. Multimodal input (text, audio, video) provides richer feedback than single-mode systems.  
+2. Resume + job description parsing ensures **questions are tailored** to candidate background and role requirements.  
+3. Real-time video evaluation (body language, gestures, posture) gives deeper insights into confidence and professionalism.  
 
-## 📄 Paper 3: *Voice AI in Firms: A Natural Field Experiment on Automated Job Interviews*  
-**Citation:** Jabarian, B., & Henkel, L. (2025). *Voice AI in Firms: A Natural Field Experiment on Automated Job Interviews.* SSRN Working Paper, 89 pp. https://doi.org/10.2139/ssrn.5395709  
 
-### Summary (4–6 sentences)  
-This large field experiment (≈70,000 applicants) tested replacing human-led interviews with AI voice agents. Applicants were randomly assigned to human, AI, or choice-based interviews, while recruiters still made final decisions. Results showed AI-led interviews improved hiring outcomes (offers, starts, retention) and 78% of applicants preferred the AI option. Candidate satisfaction was comparable across groups. The study demonstrates that AI interviews can be credible, accepted, and effective in practice.  
+### ⚠️ 2 Limitations/Risks  
+1. Heavy reliance on CNN models for body language risks bias (e.g., cultural variations in gestures or posture).  
+2. System complexity may hinder adoption outside large institutions with sufficient compute resources.  
 
-### 3 Insights I Learned  
-1. Applicants are open to AI-led interviews, reducing adoption concerns.  
-2. AI interviews often elicit more job-relevant responses than human ones.  
-3. Candidate satisfaction and perceived fairness remain high with AI agents.  
 
-### 2 Limitations/Risks  
-1. Technical glitches occurred in some sessions, showing reliability is key.  
-2. Findings come from one firm and may not generalize to all roles or industries.  
+### 🎯 1 Concrete Idea for MockSy  
+MockSy could adopt **resume + JD parsing** to personalize question sets while staying lightweight. Instead of full video analysis, it could integrate simpler add-ons like **speech pacing or filler-word detection** to approximate behavioral feedback without the heavy compute load of CNN models.  
 
-### 1 Concrete Idea for Our Project  
-Focus on making our **voice agent feel natural and professional**, since this strongly affects candidate comfort and engagement.  
-
----
-
-## 📄 Paper 4: *ROC Speak: Semi-Automated Personalized Feedback on Nonverbal Behavior*  
-**Citation:** Fung, M., Jin, Y., Zhao, R., & Hoque, M. E. (2015). *ROC Speak: Semi-Automated Personalized Feedback on Nonverbal Behavior from Recorded Videos.* Proceedings of UbiComp ’15. https://doi.org/10.1145/2750858.2804265  
-
-### Summary (4–6 sentences)  
-ROC Speak helps users practice interviews or presentations by recording themselves and receiving a mix of automated and short crowd-sourced feedback. It analyzed facial expressions, prosody, and voice modulation. In a 10-day study with 56 participants, users who got ROC Speak feedback showed measurable improvements in communication and confidence. The system demonstrated the effectiveness of combining AI cues with human-like evaluations for skill-building.  
-
-### 3 Insights I Learned  
-1. Even basic delivery metrics (pace, filler count) provide helpful improvement signals.  
-2. Tracking progress across sessions motivates continued practice.  
-3. Semi-automated feedback can build user trust.  
-
-### 2 Limitations/Risks  
-1. Required human reviewers, limiting scalability.  
-2. Focused mainly on delivery, not technical accuracy.  
-
-### 1 Concrete Idea for Our Project  
-Add **simple delivery insights** (e.g., filler count, speech speed) to Gemini’s transcript-based content feedback.  
-
----
-
-## 📄 Paper 5: *An RCT of Virtual Reality Job Interview Training for Individuals with Serious Mental Illness*  
-**Citation:** Smith, M. J., et al. (2022). *An RCT of Virtual Reality Job Interview Training for Individuals with Serious Mental Illness in IPS Supported Employment.* Psychiatric Services, 73(9), 1027–1038. https://doi.org/10.1176/appi.ps.202100516  
-
-### Summary (4–6 sentences)  
-This randomized controlled trial evaluated a VR-based interview training tool for 90 individuals with serious mental illness. Participants practiced interviews with a virtual interviewer and received structured feedback. Compared to controls, VR-JIT participants significantly improved interview performance and had higher employment rates after six months. The findings show the long-term value of simulated practice for real-world outcomes.  
-
-### 3 Insights I Learned  
-1. Repeated practice in safe environments builds confidence and skill.  
-2. Even anxious or vulnerable users accept and benefit from virtual interview systems.  
-3. Improvements in practice can translate into real job outcomes.  
-
-### 2 Limitations/Risks  
-1. VR hardware requirements limit accessibility.  
-2. Findings may not generalize to broader job-seeker populations.  
-
-### 1 Concrete Idea for Our Project  
-Highlight the ability to **retake interviews endlessly** in PrepWise, since repetition is proven to build both confidence and real-world readiness.  
-
----
