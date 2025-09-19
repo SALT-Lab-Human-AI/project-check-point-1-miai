@@ -127,5 +127,51 @@ Its flexibility ensures it supports candidates *“no matter where you are in yo
 | **HireVue**                 | AI assessments, video interviewing, skills validation in hiring workflows.        | More focused on hiring / assessment than deliberate practice; feedback often not transparent; less customizable for individual practice parameters. |
 ---
 
+## 🚀 Project Milestones ( Proposed )
+
+### 1️⃣ Foundational Setup & UI/UX (Weeks 2–3)  
+**Tasks:** Initialize project with Next.js + TypeScript, set up Tailwind CSS + Shadcn UI, organize file structure, apply global styles, ensure responsive design. Build sign-in/sign-up forms with validation, navigation, and Figma-based UI.  
+**Deliverables:** Responsive app layout with authentication pages and primary navigation.  
 
 
+### 2️⃣ Backend & Authentication (Weeks 4–5)  
+**Tasks:** Configure Firebase (Auth + Firestore) for secure authentication and data storage. Implement server actions for sign-up, sign-in, session handling, and persistence.  
+**Deliverables:** User accounts stored in Firestore, protected routes, and secure authentication flow.  
+
+
+
+### 3️⃣ Homepage & Interview Display (Weeks 6–7)  
+**Tasks:** Develop homepage with **“Your Interviews”** and **“Take an Interview”** sections. Create reusable `InterviewCard` component. Implement Firestore data fetching with parallel requests.  
+**Deliverables:** Dynamic homepage showing personalized and general interview cards.  
+
+
+
+### 4️⃣ AI Interview Generation (Weeks 8–9)  
+**Tasks:** Integrate **Vapi** for AI voice and **Gemini AI** for question generation. Build conversational workflows to capture interview parameters (role, type, level, stack, # of questions). Create API endpoint to store generated questions in Firestore.  
+**Deliverables:** Functional **Interview Generation** page with AI-assisted customization and stored interviews.  
+
+
+
+### 5️⃣ Mock Interview Session (Weeks 9–10)  
+**Tasks:** Implement `Agent` component for live sessions. Configure Vapi to use stored questions, manage call states, and handle real-time transcription.  
+**Deliverables:** Interactive voice-based mock interviews with live transcript. 🎤  
+
+
+
+### 6️⃣ Feedback Generation & Display (Weeks 10–11)  
+**Tasks:** Use **Gemini AI** to analyze transcripts and generate structured feedback (scores, strengths, areas for improvement). Store results in Firestore. Build a **Feedback Page** for results display.  
+**Deliverables:** Comprehensive feedback view with scores, category breakdowns, and actionable insights. 📊  
+
+
+
+### 7️⃣ Deployment & Refinement (Week 12)  
+**Tasks:** Deploy on **Vercel**, configure production environment variables, run final testing, and fix bugs.  
+**Deliverables:** Fully deployed, production-ready **AI Mock Interview System** accessible online. 🌐  
+
+
+---
+
+## 👥 Roles & Responsibilities  
+
+- **Aditya** will focus on **frontend development, authentication, and AI integration** (Next.js UI, Firebase Auth, Vapi + Gemini workflows).  
+- **Hari** will handle **Firestore integration, backend logic, deployment, and documentation** (data storage/retrieval, server actions, Vercel setup, doc reviews).  
