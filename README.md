@@ -60,7 +60,7 @@ The **AI Mock Interview System** is designed for anyone preparing for job interv
 
 Its flexibility ensures it supports candidates *“no matter where you are in your career.”*  
 
-## 🛠️ Proposed Core User Tasks
+## 🛠️ Core Tasks ( Proposed )
 
 - **🔐 Secure Authentication**  
   Users can create an account and log in securely, protecting access and user data.
