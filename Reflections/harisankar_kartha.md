@@ -4,23 +4,35 @@ This repository contains structured notes and insights from additional research 
 
 ---
 
-## 📄 Paper 1: *MACH: My Automated Conversation coacH*  
-**Citation:** Hoque, M. E., Courgeon, M., Martin, J.-C., Mutlu, B., & Picard, R. W. (2013). *MACH: My Automated Conversation coacH.* Proceedings of UbiComp ’13. https://doi.org/10.1145/2493432.2493502  
+## 📄 Paper: *Virtual Interviewers, Real Results: Exploring AI-Driven Mock Technical Interviews on Student Readiness and Confidence* (2025)  
 
-### Summary (4–6 sentences)  
-MACH is a virtual agent that delivers mock job interviews while analyzing facial expressions, speech, and prosody. After each session, it provides structured post-interview feedback (e.g., speaking rate, filler words, smiling). In a study with 90 students, MACH users improved interview performance compared to peers who practiced alone or watched videos. Participants valued the agent’s credibility and specific behavioral cues. This shows how automated systems can reduce anxiety and improve practice outcomes.  
+**Full Citation + Link**  
+Gomez, N., Batham, S. S., Volonte, M., & Do, T. D. (2025). *Virtual Interviewers, Real Results: Exploring AI-Driven Mock Technical Interviews on Student Readiness and Confidence.* arXiv:2506.16542. https://arxiv.org/abs/2506.16542  
+*(Also listed as “to appear” in CSCW Companion ’25 on the Drexel DiVA Lab site.)*  
 
-### 3 Insights I Learned  
-1. Post-interview feedback is more effective than interrupting users mid-session.  
-2. Simple cues like speaking pace and filler words provide actionable improvement signals.  
-3. Natural back-channeling (nodding, small responses) increases agent believability.  
+---
 
-### 2 Limitations/Risks  
-1. Focused mainly on nonverbal behavior, not on answer content.  
-2. Results were limited to a single student population.  
+### 📑 Summary (4–6 sentences)  
+This formative study examines whether an AI interviewer can realistically simulate technical interviews and improve students’ confidence and readiness. Twenty computing students completed a 50-minute session with an AI system that supported real-time dialogue, whiteboarding, and feedback; many described the experience as realistic and helpful for articulating their problem-solving process. The prototype used modern speech + LLM components (e.g., GPT-4o for multimodal language, LiveKit for calls) and achieved ~300 ms response latency—close to human conversational timing. Reported outcomes included high perceived usefulness (80%) and willingness to reuse (65%), alongside noted issues with conversational flow/timing and a desire for more personalization options. Overall, the authors conclude AI-led mock interviews can mimic real technical interviews and boost confidence, while highlighting areas to improve interaction smoothness and customization.  
 
-### 1 Concrete Idea for Our Project  
-Keep feedback **structured but simple**, focusing on a few clear delivery/content metrics after each session to avoid overwhelming users.  
+---
+
+### 💡 3 Insights I Learned  
+1. **Realism matters:** Low-latency voice and interactive whiteboarding made sessions feel closer to real interviews, which students linked to better readiness.  
+2. **Confidence gains are credible:** Most participants found the tool useful and said they’d use it again—evidence that AI practice can reduce anxiety and support preparation.  
+3. **Personalization is a lever:** Students explicitly asked for adjustable tone/voice and guidance levels, suggesting configurable interviewer “personas” could improve fit.  
+
+---
+
+### ⚠️ 2 Limitations/Risks  
+1. **Small, single-site sample (n=20):** Findings may not generalize across institutions, roles, or seniority levels.  
+2. **Conversational seams:** Users noticed hiccups in flow/responsiveness—voice agents must handle turn-taking and timing carefully to avoid breaking immersion.  
+
+---
+
+### 🎯 1 Concrete Idea for Our Project  
+Add lightweight interviewer **“personas”** in MockSy (e.g., *supportive*, *neutral*, *grill-style*) with a simple toggle for guidance level and voice style. This directly targets personalization gaps noted by students and can be implemented with Gemini for content and Vapi for voice, without requiring complex infrastructure.  
+
 
 ---
 
