@@ -45,7 +45,11 @@ This project aims to change that. By providing a platform for realistic, targete
 
 Ultimately, the system makes candidates **better at interviews**.  
 
+## 🌱 Initial Concept & Value Proposition
 
+MockSy is an AI-powered voice agent mock interview platform where users generate custom interview sessions (role, experience level, tech stack, number of questions) then practice via real-time voice interaction 🎤. After each session, MockSy delivers structured feedback—including scores for communication, technical depth, problem solving, and confidence—so users can understand their weaknesses and improve over time. Using Gemini for question generation and Vapi for voice interaction, MockSy aims to deliver realistic, scalable practice without the need for scheduling human interviewers.
+
+MockSy’s value lies in two main strengths. First, it gives users unlimited, personalized practice tuned to their goals—reducing anxiety and helping them perform their best 💪. Second, it provides actionable, objective feedback rather than generic encouragement, enabling targeted improvements. By combining role-specific customization, voice realism, and detailed feedback, MockSy bridges the gap between static prep tools and expensive coaching—making high-quality interview practice accessible to all.
 
 ## 🎯 Target Users  
 
@@ -56,64 +60,72 @@ The **AI Mock Interview System** is designed for anyone preparing for job interv
 
 Its flexibility ensures it supports candidates *“no matter where you are in your career.”*  
 
+## 🛠️ Proposed Core User Tasks
+
+- **🔐 Secure Authentication**  
+  Users can create an account and log in securely, protecting access and user data.
+
+- **🎨 Personalized Interview Creation**  
+  Through a conversational setup, users can tailor interviews by:  
+  &nbsp;&nbsp;&nbsp;&nbsp;• Role (Full Stack, Frontend, Backend)  
+  &nbsp;&nbsp;&nbsp;&nbsp;• Type (Behavioral, Technical, Mixed)  
+  &nbsp;&nbsp;&nbsp;&nbsp;• Experience level (Junior, Senior)  
+  &nbsp;&nbsp;&nbsp;&nbsp;• Number of questions  
+  &nbsp;&nbsp;&nbsp;&nbsp;• Tech stack (e.g. JS, React, Next.js)
+
+- **🎤 Real-Time Mock Interview Sessions**  
+  Users engage with an AI voice agent that uses back-channeling (e.g. “mhm”) and emotional modulation to simulate realistic interviews.
+
+- **📊 Detailed Performance Feedback**  
+  After each session, users see:  
+  &nbsp;&nbsp;&nbsp;&nbsp;• Overall score  
+  &nbsp;&nbsp;&nbsp;&nbsp;• Breakdowns (communication, technical depth, problem-solving, confidence)  
+  &nbsp;&nbsp;&nbsp;&nbsp;• Strengths & areas to improve
+
+- **🔄 Practice & Iteration**  
+  Users can retake interviews freely to adjust parameters and try new challenges.
+
+- **📂 Review Interview Metadata & History**  
+  All previous interviews are saved with metadata (role, tech stack, type, date) so users can revisit setups and track their growth.
+
+---
+## ⚙️ Proposed Tech Stack
+
+- **Frontend & Core Framework**
+  - Next.js (App Router, TurboPack) for full-stack web app
+  - TypeScript for type-safe maintainable code
+  - ESLint + Zod + React Hook Form for clean forms & validation
+
+- **UI & Design**
+  - Tailwind CSS (dark theme, v4) for responsive styling
+  - shadcn/ui for accessible pre-built components
+  - Sonner for toasts & alerts
+  - Day.js for date formatting
+
+- **Backend & Auth**
+  - Firebase Authentication (email/password, secure session cookies)
+  - Firestore for user + interview data
+  - Firebase Admin SDK & Client SDK for secure server + client ops
+  - Next.js Server Actions for safe DB interactions
+
+- **AI & Voice Components**
+  - **Vapi** for real-time voice agent (sub-500ms latency, back-channeling, emotion)
+  - **Gemini AI** for generating interview questions & structured feedback
+  - Vercel AI SDK for integrating Gemini into workflows
+
+- **Deployment**
+  - Vercel for fast, reliable deployment
+
+---
+
+## Competitive Landscape: Existing Tools & Their Shortcomings
+
+| Tool / Platform           | What They Do Well                                                                          | What They Miss Compared to  MockSy                                  |
+|---------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| **Pramp / Exponent Practice** | Peer-to-peer live mock interviews, both technical & behavioral practice. | Feedback quality depends heavily on peer; no voice-agent realism; no automated question generation tailored by role/tech stack. |
+| **Interviewing.io**         | Expert human interviewers; detailed, actionable feedback; many technical problem types. | High cost; limited availability of sessions; less flexibility for beginners; no fully automated voice agent delivering mock interviews. |
+| **HireVue**                 | AI assessments, video interviewing, skills validation in hiring workflows.        | More focused on hiring / assessment than deliberate practice; feedback often not transparent; less customizable for individual practice parameters. |
+---
 
 
-## 🛠️ Proposed Core User Tasks  
-
-### 🔐 Secure Authentication  
-Users can create an account and log in safely to access the platform and protect their data.  
-
-### 🎨 Personalized Interview Creation  
-Through a conversational setup with the AI assistant, users can customize interviews to match their goals. Options include:  
-
-- **Role focus**: Full Stack, Frontend, Backend  
-- **Interview type**: Behavioral, Technical, or Mixed  
-- **Experience level**: Junior, Senior  
-- **Number of questions**  
-- **Target technologies**: JavaScript, React, Next.js  
-
-### 🎤 Real-Time Mock Interview Sessions  
-Users participate in lifelike mock interviews with an **AI voice agent**. The system simulates realistic dialogue with natural features such as:  
-
-- Back-channeling (*“mhm”*)  
-- Emotional modulation  
-
-This makes the experience feel close to a real interview.  
-
-### 📊 Detailed Performance Feedback  
-After each session, users receive personalized feedback that covers:  
-
-- Overall performance score  
-- Category breakdowns (communication, technical knowledge, problem-solving, cultural fit, confidence)  
-- Strengths and areas for improvement  
-- A final assessment to guide preparation  
-
-### 🔄 Practice and Iteration  
-Users can retake interviews as many times as needed to:  
-
-- Track progress  
-- Adjust parameters  
-- Try new challenges  
-
-### 📂 Review Interview Details  
-All generated interviews include key metadata:  
-
-- Role  
-- Interview type  
-- Tech stack  
-- Creation date  
-
-This makes it easy for users to revisit or compare setups.  
-
-### 📜 Access Feedback History  
-Users can review past performance reports to:  
-
-- Monitor growth over time  
-- Identify recurring areas for improvement  
-
-
-
-## 🚀 Vision  
-
-The AI Based Mock Interview System empowers candidates to practice effectively, improve confidence, and perform at their best when it matters the most.  
 
