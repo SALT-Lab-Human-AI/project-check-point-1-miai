@@ -25,19 +25,11 @@ The tool aims to reduce anxiety, encourage reflection, and build confidence thro
 
 ---
 
-### Design Principles
-- Simple, distraction-free layouts suitable for focused interview sessions.  
-- Modular design allowing voice, text, or hybrid interaction.  
-- Clear separation of authenticated vs. public pages.  
-- Accessibility-first approach for keyboard and screen-reader users.  
-
----
-
 ## 2. Core Features (Concept Stage)
 
 1. **Authentication** — Basic login/signup to personalize sessions and track progress.  
 2. **Interview Generation** — AI generates questions tailored to role, level, and tech stack.  
-3. **Interview Session** — Simulated conversation with an AI interviewer (voice or text).  
+3. **Interview Session** — Simulated conversation with an AI interviewer (voice).  
 4. **Data Storage** — Session data and feedback stored securely for later review.  
 5. **Dashboard** — Displays previous attempts and performance summaries.  
 6. **Feedback & Scoring** — Post-interview feedback with metrics such as confidence, communication, and technical clarity.
