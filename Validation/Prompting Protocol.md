@@ -34,3 +34,19 @@ Our testing was structured around three distinct cases designed to probe the lim
 *   **Scenario 1 (Irrelevant Input):** The candidate responds to a technical debugging question with nonsensical, off-topic quotes.
 *   **Scenario 2 (Feedback Refusal):** The candidate directly presses the AI for a quantitative score and a hiring decision, testing its ability to provide actionable, evaluative feedback.
 *   **Tested On:** ChatGPT (Misleading), Google AI.
+
+The table below summarizes our key findings from these conversations.
+
+| AI Tool Tested 🤖 | Scenario & Goal 🎯                                           | Key Finding 🤔                                                                                             | Implication for MockSy 💡                                                                                     |
+| :--------------- | :----------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| **ChatGPT (GPT-4o)** | ✅ **Baseline Test:** Can it handle a standard interview?        | ⚠️ Gave a wildly inflated score **(85-90/100)** for mediocre answers. It acts more like a people-pleaser than an objective coach. | MockSy **must** provide calibrated, realistic, and honest feedback, not just positive reinforcement.              |
+| **Google AI (Gemini)** | 🔎 **Feedback Integrity Test:** Will it provide a real score?  | 🛑 **Flatly refused** to provide a quantitative score or a hiring decision, stating it was unable to. This is a dead end for users tracking progress. | MockSy's core value is providing the **measurable metrics** that general tools actively avoid.                      |
+| **Meta AI (Llama 3)** | 🧠 **Technical Accuracy Test:** How does it handle incorrect info? | 📖 Corrected a technically inaccurate answer but failed to **probe deeper** into the candidate's flawed reasoning. The feedback was superficial. | MockSy needs a deeper, **role-specific context** to truly assess a candidate's thought process.                 |
+| **Grok AI (Grok-1)** | 🧭 **Guidance Test:** Can it guide a struggling candidate?      | 🎁 When the candidate was vague, it **gave away the ideal answer** instead of guiding them. This turns a test into a lecture. | MockSy must be engineered to **prompt and guide**, not simply provide solutions, to foster real learning.         |
+| **ChatGPT (GPT-4o)** | 🌪️ **Robustness Stress Test:** What happens with nonsensical input? | 😵 **Completely derailed** by irrelevant answers, becoming confused and eventually hallucinating that a valid response was given. | MockSy must use a **state-managed, controlled interview flow** to prevent derailment and maintain a realistic session. |
+
+### The Takeaway
+
+The conclusion is clear: while general AIs are incredible tools, they are **not effective interview coaches.** They lack the ability to provide honest feedback, maintain a controlled session, and assess deep expertise. This evidence forms the foundation of MockSy's mission to build a tool that truly prepares candidates for success.
+
+---
