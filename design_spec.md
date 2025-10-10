@@ -1,5 +1,3 @@
-# DESIGN_SPEC.md
-
 ## 1. Project Overview
 
 **Project Name:** *MockSy*
