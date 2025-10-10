@@ -46,7 +46,7 @@ The tool aims to reduce anxiety, encourage reflection, and build confidence thro
 3. Clicks **“Start a New Interview”** to begin setup.  
 4. Selects interview parameters (role, type, level, stack, number of questions).  
 5. The system generates a set of customized questions using an AI model.  
-6. The user begins a practice session — either voice-based or text-based depending on prototype configuration.  
+6. The user begins a practice session — a voice-based configuration.  
 7. On completion, a summary card appears on the dashboard showing interview metadata.
 
 ### B. Returning User — Review & Feedback
