@@ -8,11 +8,11 @@ The Validation study revealed that general-purpose AI models are fundamentally i
 
 **The Problem:** General LLMs are optimized for agreeable conversation, not for critical evaluation. This results in overly positive and unhelpful feedback.
 
-**Our Solution:** We are engineering a dedicated **Feedback Generation Engine** that constrains the AI to act as a neutral, data-driven evaluator.
+**Proposed Solution:** We are engineering a dedicated **Feedback Generation Engine** that constrains the AI to act as a neutral, data-driven evaluator.
 
 ### Technical Steps:
 
-1.  **Strictly-Typed, Structured Output:** Do not request a simple text response. Instead, our backend makes a dedicated API call to Gemini with a system prompt that commands it to return a JSON object adhering to a predefined schema. We will use a library like **Zod** to validate this output, guaranteeing that we always receive consistent, structured data.
+1.  **Strictly-Typed, Structured Output:** Do not request a simple text response. Instead, the backend makes a dedicated API call to Gemini with a system prompt that commands it to return a JSON object adhering to a predefined schema. Will make use of a library like **Zod** to validate this output, guaranteeing that we always receive consistent, structured data.
 
     *A sample of the expected JSON output:*
     ```json
@@ -36,7 +36,7 @@ The Validation study revealed that general-purpose AI models are fundamentally i
 
 **The Problem:** A general chatbot has no concept of an "interview flow" and can be easily derailed by unexpected user input.
 
-**Our Solution:** We are implementing a finite state machine (FSM) to manage the interview's progression and are using a purpose-built voice agent platform (such as Vapi) designed for goal-oriented conversation.
+**Proposed Solution:** By implementing a finite state machine (FSM) to manage the interview's progression and also by using a purpose-built voice agent platform (such as Vapi/ElevenLabs/Synthflow) designed for goal-oriented conversation.
 
 ### Technical Steps:
 
