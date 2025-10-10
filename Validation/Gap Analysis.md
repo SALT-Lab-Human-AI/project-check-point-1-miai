@@ -17,7 +17,7 @@ A mock interview must simulate the focused, professional, and sometimes-pressure
 *   **Inability to Handle Irrelevant Input (ChatGPT):** Our failure-case test was definitive. When provided with nonsensical quotes from a TV show as an answer to a technical question, ChatGPT became confused and eventually hallucinated that a valid answer had been given ("...it sounded like you were thorough in your debugging steps..."). It could not recognize the absurdity of the input and gracefully redirect the conversation. A real interviewer would immediately stop and clarify.
 *   **Lack of Conversational Control (Grok AI):** The user was able to repeatedly provide the same vague, definitional answer to a specific implementation question. While Grok AI eventually corrected course, it demonstrated a lack of control in guiding the candidate toward a satisfactory answer, a key skill for an interviewer.
 
-**Conclusion:** The open-ended nature of general AI makes it unsuitable for the structured task of an interview. MockSy's use of a dedicated voice agent (Vapi) with a more controlled flow is essential for creating an immersive and robust simulation.
+**Conclusion:** The open-ended nature of general AI makes it unsuitable for the structured task of an interview.
 
 ### 3. The Domain Expertise Gap: Superficial Knowledge
 While the AIs possess broad knowledge, they lack the deep, role-specific expertise to truly challenge a candidate or provide expert-level feedback.
