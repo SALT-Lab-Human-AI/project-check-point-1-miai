@@ -35,7 +35,7 @@ Our testing was structured around three distinct cases designed to probe the lim
 *   **Scenario 2 (Feedback Refusal):** The candidate directly presses the AI for a quantitative score and a hiring decision, testing its ability to provide actionable, evaluative feedback.
 *   **Tested On:** ChatGPT (Misleading), Google AI.
 
-The table below summarizes our key findings from these conversations.
+The table below summarizes the key findings from these conversations.
 
 | AI Tool Tested 🤖 | Scenario & Goal 🎯                                           | Key Finding 🤔                                                                                             | Implication for MockSy 💡                                                                                     |
 | :--------------- | :----------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
