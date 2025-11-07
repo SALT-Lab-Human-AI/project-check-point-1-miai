@@ -7,7 +7,7 @@
 <h1 align="center">🤖 MockSy 🎯 </h1>
 
 <!-- Tagline -->
-<p align="center"><i>Your personal AI-powered mock interview companion</i></p>
+<p align="center"><i>Your personal AI-powered companion for Behavioral Interview Prep </i></p>
 
 
 <!-- Badges -->
