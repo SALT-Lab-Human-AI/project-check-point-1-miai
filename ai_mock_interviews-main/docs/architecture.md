@@ -45,6 +45,8 @@ AI Interview Coach is built as a full-stack Next.js application with AI-powered 
 │  │  Voice AI    │  │  Gemini AI   │  │  Auth + DB   │         │
 │  └──────────────┘  └──────────────┘  └──────────────┘         │
 └─────────────────────────────────────────────────────────────────┘
+<img width="1909" height="2160" alt="image" src="https://github.com/user-attachments/assets/78df2a92-b0aa-42e2-b65c-a97f7ff5c26b" />
+
 ```
 
 ## Component Architecture
