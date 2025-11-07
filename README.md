@@ -22,6 +22,8 @@
 </p>
 
 ---
+App Link : https://mocksy-boa0j044g-harisankar200698-9247s-projects.vercel.app
+Presentation Link : https://docs.google.com/presentation/d/1zTURx2vdNDYihxHc3qzTAORRySeazQnZe2SyhSHFkME/edit?usp=sharing
 
 ## 📌 Problem Statement and Why It Matters  
 
