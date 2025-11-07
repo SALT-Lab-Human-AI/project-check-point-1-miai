@@ -105,7 +105,7 @@ AI Interview Coach is a comprehensive platform designed to help job seekers prep
 
 ---
 
-## � Ge>tting Started
+## Getting Started
 
 ### Prerequisites
 
