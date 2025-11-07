@@ -20,10 +20,8 @@ An advanced AI-powered interview preparation platform that helps candidates mast
 4. [Architecture](#-architecture)
 5. [Getting Started](#-getting-started)
 6. [Environment Setup](#-environment-setup)
-7. [Project Structure](#-project-structure)
-8. [AI Features](#-ai-features)
-9. [Contributing](#-contributing)
-10. [License](#-license)
+7. [AI Features](#-ai-features)
+8. [License](#-license)
 
 ---
 
@@ -212,56 +210,6 @@ Update this to your production URL when deploying
 
 ---
 
-## 📁 Project Structure
-
-```
-ai-interview-coach/
-├── app/                          # Next.js App Router
-│   ├── (root)/                   # Main application routes
-│   │   ├── page.tsx             # Dashboard
-│   │   ├── interview/           # Interview pages
-│   │   │   ├── page.tsx         # Interview setup
-│   │   │   └── [id]/            # Dynamic interview routes
-│   │   │       ├── page.tsx     # Interview session
-│   │   │       └── feedback/    # Feedback page
-│   │   └── debug/               # Debug utilities
-│   └── api/                     # API routes
-│       ├── auth/                # Authentication endpoints
-│       └── debug/               # Debug endpoints
-├── components/                   # React components
-│   ├── feedback/                # Feedback display components
-│   │   ├── STARBreakdown.tsx
-│   │   ├── AnswerComparisonSection.tsx
-│   │   ├── ImprovementPlanSection.tsx
-│   │   └── ...
-│   ├── Agent.tsx                # VAPI voice agent component
-│   ├── InterviewSetupForm.tsx
-│   └── ...
-├── lib/                         # Core business logic
-│   ├── actions/                 # Server actions
-│   │   ├── general.action.ts
-│   │   └── interview-feedback.action.ts
-│   ├── prompts/                 # Versioned AI prompts
-│   │   ├── star-detection-v1.md
-│   │   ├── improvement-plan-v1.md
-│   │   ├── company-feedback-v1.md
-│   │   └── ...
-│   ├── evaluation-engine.ts     # Main evaluation logic
-│   ├── star-analyzer.ts         # STAR framework analysis
-│   ├── followup-generator.ts    # Follow-up question generation
-│   ├── company-profiles.ts      # Company-specific data
-│   ├── example-answers.ts       # Example answer database
-│   └── principle-descriptions.ts # Principle explanations
-├── constants/                   # Configuration constants
-│   └── index.ts                 # VAPI interviewer configs
-├── types/                       # TypeScript type definitions
-│   └── index.d.ts
-└── public/                      # Static assets
-    └── covers/                  # Company logos
-```
-
----
-
 ## 🤖 AI Features
 
 ### STAR Framework Analysis
@@ -342,40 +290,10 @@ npm run type-check
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
----
 
-## 🙏 Acknowledgments
-
-- VAPI for voice AI infrastructure
-- Google Gemini for AI evaluation capabilities
-- Firebase for authentication and database
-- The open-source community for amazing tools and libraries
-
----
-
-## 📞 Support
-
-For issues, questions, or suggestions:
-- Open an issue on GitHub
-- Check existing documentation in `/lib/prompts/` for AI prompt details
-- Review `FEATURES.md` for detailed feature documentation
-
----
 
 **Built with ❤️ for helping candidates ace their interviews**
