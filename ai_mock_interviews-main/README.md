@@ -105,37 +105,6 @@ AI Interview Coach is a comprehensive platform designed to help job seekers prep
 
 ---
 
-## 🏗️ Architecture
-
-### AI Evaluation Pipeline
-
-```
-User Answer → VAPI Transcription → Combined Transcript
-                                          ↓
-                    ┌─────────────────────┴─────────────────────┐
-                    ↓                                             ↓
-            STAR Analysis                              Secondary Metrics
-         (Gemini 2.5 Flash)                          (AI + Rule-based)
-                    ↓                                             ↓
-            ┌───────┴────────┐                                   ↓
-            ↓                ↓                                    ↓
-    Red Flag Detection   Company Feedback                        ↓
-            ↓                ↓                                    ↓
-            └────────────────┴────────────────────────────────────┘
-                                    ↓
-                          Improvement Plan Generation
-                                    ↓
-                          Comprehensive Feedback
-```
-
-### Prompt Versioning System
-All AI prompts are versioned (e.g., `star-detection-v1.md`) enabling:
-- A/B testing of different prompt strategies
-- Systematic iteration and improvement
-- Tracking which prompt version was used per evaluation
-
----
-
 ## � Ge>tting Started
 
 ### Prerequisites
@@ -357,24 +326,6 @@ Contributions are welcome! Please follow these steps:
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- VAPI for voice AI infrastructure
-- Google Gemini for AI evaluation capabilities
-- Firebase for authentication and database
-- The open-source community for amazing tools and libraries
-
----
-
-## 📞 Support
-
-For issues, questions, or suggestions:
-- Open an issue on GitHub
-- Check existing documentation in `/lib/prompts/` for AI prompt details
-- Review `FEATURES.md` for detailed feature documentation
 
 ---
 
