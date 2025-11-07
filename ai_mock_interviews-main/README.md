@@ -17,13 +17,12 @@ An advanced AI-powered interview preparation platform that helps candidates mast
 1. [Introduction](#-introduction)
 2. [Key Features](#-key-features)
 3. [Tech Stack](#️-tech-stack)
-4. [Architecture](#-architecture)
-5. [Getting Started](#-getting-started)
-6. [Environment Setup](#-environment-setup)
-7. [Project Structure](#-project-structure)
-8. [AI Features](#-ai-features)
-9. [Contributing](#-contributing)
-10. [License](#-license)
+4. [Getting Started](#-getting-started)
+5. [Environment Setup](#-environment-setup)
+6. [Project Structure](#-project-structure)
+7. [AI Features](#-ai-features)
+8. [Contributing](#-contributing)
+9. [License](#-license)
 
 ---
 
