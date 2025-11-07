@@ -6,7 +6,7 @@ AI Interview Coach is built as a full-stack Next.js application with AI-powered 
 
 ## High-Level Architecture
 
-![System Architecture](System architecture.png)
+![System Architecture](System_architecture.png)
 
 
 ## Component Architecture
