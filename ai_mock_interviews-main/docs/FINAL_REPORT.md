@@ -123,7 +123,7 @@ Participants' self-rated confidence in applying the STAR framework improved sign
 
 **Key Finding:** Novices showed 2.75x larger gains than intermediate users, suggesting Mocksy is most valuable for candidates with limited interview experience.
 
-![Figure 2: Learning Gains by Experience Level](figures/chart1_learning_gains.png)
+![Figure 2: Learning Gains by Experience Level](chart1_learning_gains.png)
 *Figure 2: STAR framework confidence before and after using Mocksy, segmented by participant experience level. Novices (0-3 interviews) demonstrated the largest confidence gain (+2.75 points), while experts showed a ceiling effect.*
 
 **Feature Usefulness (Q13):**
@@ -371,3 +371,4 @@ CRITICAL: NEVER interrupt the candidate while they are thinking.
 Wait for clear signals (e.g., "That's it").
 If there's a long pause (15+ seconds), politely check in.
 ```
+
