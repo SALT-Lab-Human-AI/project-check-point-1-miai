@@ -96,7 +96,7 @@ All 10 participants successfully signed up and initiated the interview. Nine par
 **System Usability Scale (SUS):**
 The mean SUS score was **74.8** (SD = 9.8, Range: 55-90). According to Bangor et al.'s (2008) interpretation guidelines, this places Mocksy in the "Good" category.
 
-![Figure 1: SUS Score Distribution showing individual participant scores (N=10)](figures/chart4_sus_distribution.png)
+![Figure 1: SUS Score Distribution showing individual participant scores (N=10)](chart4_sus_distribution.png)
 *Figure 1: System Usability Scale (SUS) distribution showing all individual participant scores (P1-P10). The green vertical line represents Mocksy's mean score of 74.8 (SD=9.8), placing the system in the "Good" usability category according to Bangor et al.'s (2008) interpretation framework.*
 
 *Table 1: SUS Score Distribution*
@@ -135,7 +135,7 @@ When asked which feedback component was most useful, participants selected:
 
 The strong preference for STAR Breakdown validates our decision to prioritize structured component analysis over holistic summaries.
 
-![Figure 3: Most Valuable Feedback Features](figures/chart3_feature_usefulness.png)
+![Figure 3: Most Valuable Feedback Features](chart3_feature_usefulness.png)
 *Figure 3: Participant selection of the single most useful feedback feature (Q13). Half of all participants (n=5, 50%) identified STAR Breakdown as the most valuable component, validating the system's core pedagogical design.*
 
 ### 5.3 Trust & Voice Interaction Quality (RQ2)
@@ -163,7 +163,7 @@ Trust in the AI's evaluation ranged from 2/5 to 5/5 (M = 3.7, SD = 1.0).
 **Correlation Analysis:**
 There is a strong negative correlation between interruption frequency and trust (r = -.78, p < .01). Participants experiencing 2+ interruptions showed significantly lower trust (M = 2.8) compared to those with 0-1 interruptions (M = 4.5), representing a "Trust Gap" of -1.7 points.
 
-![Figure 4: The Trust Gap - Trust by Interruption Frequency](figures/chart2_trust_gap.png)
+![Figure 4: The Trust Gap - Trust by Interruption Frequency](chart2_trust_gap.png)
 *Figure 4: Mean trust ratings by interruption frequency during the interview. The red arrow highlights the -1.7 point "Trust Gap" between participants who experienced zero interruptions (M=5.0) versus those who experienced 2-3 interruptions (M=2.7). Error bars represent standard deviation where n≥3.*
 
 **Net Promoter Score (NPS):**
@@ -371,4 +371,5 @@ CRITICAL: NEVER interrupt the candidate while they are thinking.
 Wait for clear signals (e.g., "That's it").
 If there's a long pause (15+ seconds), politely check in.
 ```
+
 
